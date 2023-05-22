@@ -14,7 +14,7 @@ const App = () => {
     e.preventDefault();
     try {
       // Make API request to backend to fetch weather data for the input city
-      const response = await axios.get(`https://azwajaal.onrender.com/weather/${city}`);
+      const response = await axios.get(`http://localhost:5000.com/weather/${city}`);
       setWeatherData(response.data);
       setError('');
       // Handle weather data response as needed
