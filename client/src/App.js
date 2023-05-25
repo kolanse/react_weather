@@ -14,7 +14,7 @@ const App = () => {
     e.preventDefault();
     try {
       // Make API request to backend to fetch weather data for the input city
-      const response = await axios.get(`http://localhost:5000/weather/${city}`);
+      const response = await axios.get(`https://fanta-weather.onrender.com/weather/${city}`);
       setWeatherData(response.data);
       setError('');
       // Handle weather data response as needed
