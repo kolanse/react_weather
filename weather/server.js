@@ -6,9 +6,7 @@ const cors = require('cors');
 
 // Create an instance of Express app
 const app = express();
-app.use(cors({
-  origin: ['http://localhost:3000']
-}))
+app.use(cors())
 
 // Set up middleware for parsing JSON request bodies
 app.use(express.json());
